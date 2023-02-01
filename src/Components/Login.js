@@ -19,7 +19,8 @@ export default function Login() {
         Doloading(true)
         event.preventDefault()
         try {
-            var response = await PostRequest(url.USER_LOGIN, { "email": email.current.value, "password": pass.current.value })
+            console.log(url.USER_LOGIN)
+            var response = await PostRequest("http://apps.skilledfresher.in:8082/chatbuddy/auth/login", { "email": email.current.value, "password": pass.current.value })
             response = response.data;
             if (!response.status) {
                 seterror(response.message);
@@ -33,7 +34,7 @@ export default function Login() {
                 navigate("/home");
             }
         } catch (error) {
-            window.alert("Server crash");
+            window.alert("Server crash ,"+error);
         }
         Doloading(false)
     }
