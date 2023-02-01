@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SocialChatApplication/static/css/main.073c9b0a.css",
-    "main.js": "/SocialChatApplication/static/js/main.b0fbf18d.js",
+    "main.js": "/SocialChatApplication/static/js/main.b28f24d3.js",
     "static/js/787.a46efa3f.chunk.js": "/SocialChatApplication/static/js/787.a46efa3f.chunk.js",
     "index.html": "/SocialChatApplication/index.html",
     "main.073c9b0a.css.map": "/SocialChatApplication/static/css/main.073c9b0a.css.map",
-    "main.b0fbf18d.js.map": "/SocialChatApplication/static/js/main.b0fbf18d.js.map",
+    "main.b28f24d3.js.map": "/SocialChatApplication/static/js/main.b28f24d3.js.map",
     "787.a46efa3f.chunk.js.map": "/SocialChatApplication/static/js/787.a46efa3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b0fbf18d.js"
+    "static/js/main.b28f24d3.js"
   ]
 }
