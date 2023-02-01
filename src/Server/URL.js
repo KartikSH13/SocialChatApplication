@@ -19,5 +19,5 @@ export default {
     FREIND_MESSAGE:"/api/user/msg/get/",
 
     FREIND_MESSAGE:"/api/user/msg/get/",
-    SEND_MESSAGE:"api/user/msg/send"
+    SEND_MESSAGE:"/api/user/msg/send"
 }
