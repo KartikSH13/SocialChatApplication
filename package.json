@@ -2,7 +2,7 @@
   "name": "facebook",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://apps.skilledfresher.in:8082/chatbuddy",
+  "proxy": "http://apps.codebetter.in:8082/chatbuddy",
   "homepage": "https://KartikSH13.github.com/SocialChatApplication",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
