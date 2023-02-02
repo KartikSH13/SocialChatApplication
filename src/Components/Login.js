@@ -32,7 +32,7 @@ export default function Login() {
                 document.cookie = "username=" + response.data.name + ";Path=/;" + expires;
                 document.cookie = "token=" + response.data.token + ";Path=/;" + expires;
                 dispatch(setData(response.data));
-                navigate("/home");
+                navigate("/SocialChatApplication/home");
             }
         } catch (error) {
             window.alert("Server crash ,"+error);
@@ -55,7 +55,7 @@ export default function Login() {
                 "token": token[1]
             }
             dispatch(setData(data));
-            navigate("/home");
+            navigate("/SocialChatApplication/home");
         }
     }
     useEffect(() => {
@@ -97,7 +97,7 @@ export default function Login() {
                 {err != undefined ? <div><h5 className="text-danger">{err}</h5></div> : ""}
 
                 {/* Link to change login component to register component */}
-                <Link to={"/register"} className="btn btn-success btn-lg fw-bold mt-2">Create New Account</Link>
+                <Link to={"/SocialChatApplication/register"} className="btn btn-success btn-lg fw-bold mt-2">Create New Account</Link>
             </div>
         </div>
         <div className="cursor"></div>

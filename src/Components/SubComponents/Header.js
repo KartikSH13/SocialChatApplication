@@ -23,7 +23,7 @@ export default function Header() {
   return <>
     <nav className="navbar navbar-light bg-light navbar-expand-lg fixed-top border-bottom rounded-bottom border-3 ">
       <div className="container-fluid row">
-        <Link className="navbar-brand col" to='/home' onClick={() => changeFrame("postframe", "home", "freinds")}>
+        <Link className="navbar-brand col" to='/SocialChatApplication/home' onClick={() => changeFrame("postframe", "home", "freinds")}>
           <img className="header__logo" width="30" height="30" alt="" />
         </Link>
 
@@ -34,16 +34,16 @@ export default function Header() {
             <div className="navbar-nav d-flex justify-content-between">
               <li className="nav-item">
                 <div className="header__middle my-1" title="Home">
-                  <Link to="/home" className="header__option active" onClick={() => changeFrame("postframe", "home", "freinds")} id="home" style={{ "textDecoration": "none" }}>
+                  <Link to="/SocialChatApplication/home" className="header__option active" onClick={() => changeFrame("postframe", "home", "freinds")} id="home" style={{ "textDecoration": "none" }}>
                     <span className="material-icons" > home </span>
                   </Link>
-                  <Link to="/home" className="header__option " onClick={() => changeFrame("freindsframe", "freinds", "home")} id="freinds" title="Freinds" style={{ "textDecoration": "none" }}>
+                  <Link to="/SocialChatApplication/home" className="header__option " onClick={() => changeFrame("freindsframe", "freinds", "home")} id="freinds" title="Freinds" style={{ "textDecoration": "none" }}>
                     <span className="material-icons" > supervised_user_circle </span>
                   </Link>
                 </div>
               </li>
               <li className="nav-item d-flex flex-row">
-                <Link to="/home/profile" style={{ textDecoration: 'none' }}>
+                <Link to="/SocialChatApplication/home/profile" style={{ textDecoration: 'none' }}>
                   <div className="header__info" >
                     <img className="user__avatar" alt=""
                     />

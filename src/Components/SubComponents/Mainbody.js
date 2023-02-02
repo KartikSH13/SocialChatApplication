@@ -154,6 +154,7 @@ export default function Mainbody() {
             {/*  Dynamic posts */}
             {posts.length != 0 ?
                 posts.map((object, index) => {
+                    console.log(object.postBy.image)
                     return <div className="post">
                         <div className="post__top shadow-sm" onClick={() => { setFreind(object.postBy); setPreviousFrame("postframe") }} style={{ "cursor": "pointer" }}>
                             {object.postBy.image != null ? <img className="user_avatar post__avatar border" alt="" src={object.postBy.image} /> : <img className="user__avatar post__avatar shadow" />}

@@ -96,7 +96,7 @@ export default function UserProfile() {
         }
     }
     const back = () => {
-        navigate("/home")
+        navigate("/SocialChatApplication/home")
     }
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
