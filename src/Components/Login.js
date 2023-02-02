@@ -20,7 +20,7 @@ export default function Login() {
         event.preventDefault()
         try {
             console.log(url.USER_LOGIN)
-            var response = await PostRequest("http://apps.skilledfresher.in:8082/chatbuddy/auth/login", { "email": email.current.value, "password": pass.current.value })
+            var response = await PostRequest(url.USER_LOGIN, { "email": email.current.value, "password": pass.current.value })
             console.log(response)
             response = response.data;
             if (!response.status) {

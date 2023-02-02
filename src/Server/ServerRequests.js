@@ -1,4 +1,16 @@
 import axios from "axios";
+import { createProxyMiddleware } from "http-proxy-middleware";
+const proxy=createProxyMiddleware({
+    target:'http://apps.codebetter.in:8082',
+    changeOrigin:true,
+    onProxyReq: function (proxyReq, req, res) {
+        // Add custom headers or change the method of the proxy request
+        if (req.method === 'POST') {
+          proxyReq.method = 'POST';
+          proxyReq.setHeader('Content-Type', 'application/json');
+        }
+      },
+})
 function GetRequest(URL, token) {
     return axios.get(URL, {
         headers: {
@@ -8,7 +20,10 @@ function GetRequest(URL, token) {
 }
 
 function PostRequest(URL, data) {
-    return axios.post(URL, data);
+    return axios.post(URL,{
+        data:data,
+        baseURL: '/api',
+    });
 }
 
 function SpecialPostRequest(URL, data, token) {
