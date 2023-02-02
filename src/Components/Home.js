@@ -29,7 +29,7 @@ export default function Home() {
             document.cookie = "username=;Path=/;Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
             document.cookie = "token=;Path=/;Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
             dispatch(logOut());
-            navigate('/login');
+            navigate('/SocialChatApplication/login');
         }
         //else dispatching all posts to redux 
         else{

@@ -89,7 +89,7 @@ export default function Login() {
                 {/* If there is error during registering, display error */}
                 {err.current != undefined ? <div><h4 className="text-danger">{err.current}</h4></div> : ""}
                 {/* Link to change Register component to login component */}
-                <Link to="/login" className="btn btn-success btn-lg fw-bold   input-group input-group-lg justify-content-center">Login</Link>
+                <Link to="/SocialChatApplication/login" className="btn btn-success btn-lg fw-bold   input-group input-group-lg justify-content-center">Login</Link>
             </div>
 
         </div>

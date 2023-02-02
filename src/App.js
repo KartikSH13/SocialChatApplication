@@ -30,7 +30,7 @@ function App() {
       document.cookie = "username=;Path=/;Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
       document.cookie = "token=;Path=/;Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
       dispatch(logOut());
-      navigate('/login');
+      navigate('/SocialChatApplication/login');
     }
     //else dispatching all user's list to redux 
     else {
@@ -59,7 +59,7 @@ function App() {
       dispatch(setData(data));
     }
     else {
-      navigate("/login")
+      navigate("/SocialChatApplication/login")
     }
   }
   useEffect(() => {
@@ -76,11 +76,11 @@ function App() {
 
   return <>
     <Routes>
-      <Route path='/' element={<Home />}></Route>
-      <Route path='/login' element={<Login />}></Route>
-      <Route path='/register' element={<Register />}></Route>
-      <Route path='/home' element={<Home />}></Route>
-      <Route path='/home/profile' element={<UserProfile />}></Route>
+      <Route path='/SocialChatApplication/' element={<Home />}></Route>
+      <Route path='/SocialChatApplication/login' element={<Login />}></Route>
+      <Route path='/SocialChatApplication/register' element={<Register />}></Route>
+      <Route path='/SocialChatApplication/home' element={<Home />}></Route>
+      <Route path='/SocialChatApplication/home/profile' element={<UserProfile />}></Route>
     </Routes>
   </>
 }
